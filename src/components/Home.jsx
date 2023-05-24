@@ -6,7 +6,8 @@ const Home = () => {
     <div name="home" className="bg-[#08162a] w-full h-screen">
       {/* notes */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full text-xl text-blue-200">
-        <p>Hi, I'm</p>
+        <p>Hi !! Bonjour !! Hola !! नमस्कार !! </p>
+        <p> I am</p>
         <br />
         <h2 className="text-4xl sm:text-6xl font-bold text-pink-400">
           Anuja Bujurge
@@ -19,15 +20,15 @@ const Home = () => {
           <div className="py-6 max-w-[700px]">
             <p>
               I am creative and motivated Front-End Developer specializing in
-              web development.
+              web development, passionate about creating inetractive applications.
             </p>
             <br />
-            <p>
+            {/* <p>
               I am a <span className="text-blue-500 font-bold">
                 Front-End Developer </span> 
-               passionate about creating inetractive apllications.
-            </p>
-            <br />
+               
+            </p> */}
+            {/* <br /> */}
             <p>
               I have completed Full-Time intense traning in
               <span className="text-blue-500 font-bold"> PerScholas</span> in
