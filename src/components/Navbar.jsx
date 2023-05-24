@@ -4,8 +4,6 @@ import {
   FaTimes,
   FaGithub,
   FaLinkedin,
-  FaLinkedinIn,
-  FaFacebook,
 } from "react-icons/fa";
 import Logo from "../assets/Anuja_Logo.png";
 import { HiOutlineMail } from "react-icons/hi";
@@ -17,7 +15,7 @@ export default function Navbar() {
   return (
     <div className="fixed w-full h-[90px] flex justify-between items-center px-5  bg-[#051020] text-gray-400">
       <div>
-        <img className="w-[200px] h-[120px] hover:w-[340px] hover:h-[240px] hover:mt-[150px] rounded-3xl"
+        <img className="w-[200px] h-[120px] hover:w-[340px] hover:h-[240px] hover:mt-[150px] rounded-3xl duration-1000"
           src={Logo}
           alt="data"
         ></img>
