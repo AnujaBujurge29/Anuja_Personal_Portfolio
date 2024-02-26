@@ -1,33 +1,37 @@
-import React, { useState } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
-import Logo from "../assets/Anuja_Logo.png";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa"
+
+import Logo from "../images/Anuja_Logo.png"
+import { HiOutlineMail } from "react-icons/hi"
+import { BsFillPersonLinesFill } from "react-icons/bs"
 
 export default function Navbar() {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
+  const [nav, setNav] = useState(false)
+  const handleClick = () => setNav(!nav)
   return (
-    <div className="fixed w-full h-[90px] flex justify-between items-center px-5  bg-[#051020] text-gray-400">
+    <div className="fixed w-full h-[70px] flex justify-between items-center px-5  bg-[#051020] text-blue-400">
       <div>
-        <img className="w-[200px] h-[120px] hover:w-[340px] hover:h-[240px] hover:mt-[150px] rounded-3xl duration-1000"
+        <img
+          className="w-[200px] h-[120px] hover:w-[340px] hover:h-[240px] hover:mt-[150px] rounded-3xl duration-1000"
           src={Logo}
           alt="data"
         ></img>
       </div>
       {/* main menu */}
 
-      <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
+      <ul className="hidden md:flex text-2xl">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
         <li>Work Experinece</li>
-        <li>Skills</li>
-        <li>contact</li>
+        <li>
+          <Link to="/skills">Skills</Link>
+        </li>
+        <li>Contact</li>
       </ul>
 
       {/* right Sidebar */}
@@ -56,6 +60,8 @@ export default function Navbar() {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 rounded-xl">
             <a
               className="flex justify-between items-center w-full text-gray-300"
+              target="_blank"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/anuja-bujurge/"
             >
               Linkedin <FaLinkedin size={30} />
@@ -65,6 +71,8 @@ export default function Navbar() {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-800 rounded-xl">
             <a
               className="flex justify-between items-center w-full text-gray-300"
+              target="_blank"
+              rel="noreferrer"
               href="https://github.com/AnujaBujurge29"
             >
               GitHub <FaGithub size={30} />
@@ -91,5 +99,5 @@ export default function Navbar() {
         </ul>
       </div>
     </div>
-  );
+  )
 }
