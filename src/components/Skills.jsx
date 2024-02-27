@@ -12,6 +12,7 @@ import NodeImg from "../images/node.png"
 import MatlabImg from "../images/MATLAB.jpg"
 import GitHubImg from "../images/github.png"
 import MERN from "../images/Mern1.jpg"
+
 const Skills = () => {
   return (
     <div

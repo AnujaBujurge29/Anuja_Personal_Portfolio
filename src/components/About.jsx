@@ -1,4 +1,4 @@
-import React from "react"
+// import React from "react"
 
 const About = () => {
   return (
@@ -36,7 +36,7 @@ const About = () => {
               <span className="text-xl font-bold text-green-800">
                 Electronics and Telecommunication Engineering
               </span>{" "}
-              followed by a Master's in{" "}
+              followed by a Master&apos;s in{" "}
               <span className="text-xl font-bold text-green-800">
                 Electronics Engineering.
               </span>

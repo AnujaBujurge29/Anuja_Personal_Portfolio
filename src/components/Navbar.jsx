@@ -31,6 +31,9 @@ export default function Navbar() {
         <li>
           <Link to="/skills">Skills</Link>
         </li>
+        <li>
+          <Link to="/certs">Certifications</Link>
+        </li>
         <li>Contact</li>
       </ul>
 

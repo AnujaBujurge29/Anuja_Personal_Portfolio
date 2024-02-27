@@ -1,4 +1,4 @@
-import React from "react"
+// import React from "react"
 import { HiArrowNarrowRight } from "react-icons/hi"
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
         <div>
           <div className="py-6 max-w-[700px]">
             <p>
-              I'm dynamic and driven Front-End Developer, specializing in
+              I am dynamic and driven Front-End Developer, specializing in
               crafting engaging web experiences. My passion lies in developing
               interactive applications that captivate users.
             </p>
