@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 // Software Developement
 import softDev1 from '../Certificates/SoftwareDev.jpg'
-import softDev2 from '../Certificates/HTML.png'
+// import softDev2 from '../Certificates/HTML.png'
 // Cloud Computing
 import cloud1 from '../Certificates/WebDevelopementFundamentals.png'
 import cloud2 from '../Certificates/IntroductiontoCloudComputing.jpg'
@@ -16,7 +16,7 @@ import AWS1 from '../Certificates/awsPartnerAccreditationTechnical.png'
 import AWS2 from '../Certificates/awsPartnerSalesAccreditationBusiness.png'
 import AWS3 from '../Certificates/AWSPartnerAccreditationTechincal.png'
 
-const slides = [softDev1, softDev2, cloud1, cloud2, cloud3, AWS1, AWS2, AWS3]
+const slides = [softDev1, cloud1, cloud2, cloud3, AWS1, AWS2, AWS3]
 
 export default function Certificates() {
     const [currentIndex, setCurrentIndex] = useState(0);
