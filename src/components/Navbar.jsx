@@ -5,12 +5,14 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa"
 import Logo from "../images/Anuja_Logo.png"
 import { HiOutlineMail } from "react-icons/hi"
 import { BsFillPersonLinesFill } from "react-icons/bs"
+// import NewResume from '../Certificates/AnujaBujurgeResume.pdf'
+// import resume2 from '../Certificates/Resume.docx'
 
 export default function Navbar() {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
   return (
-    <div className="fixed w-full h-[70px] flex justify-between items-center px-5  bg-[#051020] text-blue-400">
+    <div className="fixed w-full h-[70px] flex justify-between items-center px-5 bg-[#051020] text-blue-400">
       <div>
         <img
           className="w-[200px] h-[120px] hover:w-[340px] hover:h-[240px] hover:mt-[150px] rounded-3xl duration-1000"
@@ -20,7 +22,7 @@ export default function Navbar() {
       </div>
       {/* main menu */}
 
-      <ul className="hidden md:flex text-2xl">
+      <ul className="hidden md:flex text-xl">
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -94,7 +96,8 @@ export default function Navbar() {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-600 rounded-xl">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://docs.google.com/document/d/1TmWDf5_XqwEaSKudJFpZQ7nqxTNdMc28/edit?usp=sharing&ouid=103395538555720278915&rtpof=true&sd=true"
+              target="_blank" rel="noopener noreferrer"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

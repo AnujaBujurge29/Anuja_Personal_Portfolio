@@ -45,7 +45,8 @@ const Home = () => {
           <br />
           <div>
             <button className="group text-pink-700 font-bold border-2 px-6 py-3 my-2 flex items-center rounded-2xl hover:bg-pink-700 hover:text-black hover:border-[#08162a] hover:shadow-xl hover:shadow-black">
-              View PROJECTS &nbsp;&nbsp;
+              <a href="https://github.com/AnujaBujurge29" target="_blank"
+                rel="noreferrer">View PROJECTS</a> &nbsp;&nbsp;
               <HiArrowNarrowRight className="group-hover:animate-ping" />
             </button>
           </div>

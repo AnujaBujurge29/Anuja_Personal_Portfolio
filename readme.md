@@ -48,3 +48,5 @@ https://www.canva.com
 ## React Router Dom
 
 npm i react-router-dom
+
+npm install docxtemplater

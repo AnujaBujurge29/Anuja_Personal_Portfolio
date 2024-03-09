@@ -4,33 +4,36 @@ import { RxDotFilled } from 'react-icons/rx';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { useState } from 'react'
 
-import image2 from '../Certificates/IntroductiontoCloudComputing.jpg'
-import image1 from '../Certificates/SoftwareDev.jpg'
-import image3 from '../Certificates/WebDevelopementFundamentals.png'
-import image4 from '../Certificates/awsPartnerAccreditationTechnical.png'
+// Software Developement
+import softDev1 from '../Certificates/SoftwareDev.jpg'
+import softDev2 from '../Certificates/HTML.png'
+// Cloud Computing
+import cloud1 from '../Certificates/WebDevelopementFundamentals.png'
+import cloud2 from '../Certificates/IntroductiontoCloudComputing.jpg'
+import cloud3 from '../Certificates/CloudComputingFundamentals.png'
+//AWS
+import AWS1 from '../Certificates/awsPartnerAccreditationTechnical.png'
+import AWS2 from '../Certificates/awsPartnerSalesAccreditationBusiness.png'
+import AWS3 from '../Certificates/AWSPartnerAccreditationTechincal.png'
 
-const slides = [image1, image2, image3, image4]
+const slides = [softDev1, softDev2, cloud1, cloud2, cloud3, AWS1, AWS2, AWS3]
 
 export default function Certificates() {
     const [currentIndex, setCurrentIndex] = useState(0);
-
     const prevSlide = () => {
         const isFirstSlide = currentIndex === 0;
         const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
     };
-
     const nextSlide = () => {
         const isLastSlide = currentIndex === slides.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     };
-
     const goToSlide = (slideIndex) => {
         setCurrentIndex(slideIndex);
     };
     return (
-
         <div className="bg-[#08162a] w-full h-screen p-20 text-blue-400 group">
             <div className='flex flex-col justify-center items-center w-full h-full m-20'>
                 <div
@@ -56,9 +59,6 @@ export default function Certificates() {
                         </div>
                     ))}
                 </div></div>
-
-
         </div >
-
     )
 }
